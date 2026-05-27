@@ -1,26 +1,26 @@
-# 🎣 Phishing Email Detection using NLP
+#  Phishing Email Detection using NLP
 
 A Machine Learning pipeline designed to classify emails as phishing or legitimate using Natural Language Processing (NLP) techniques. This project was developed as a practical implementation of cybersecurity threat detection.
 
-### 🧠 Model Overview
+###  Model Overview
 The model uses **TF-IDF (Term Frequency-Inverse Document Frequency)** for text vectorization and a **Logistic Regression** classifier. It analyzes linguistic markers, suspicious URLs, and social engineering patterns to detect malicious intent.
 
 - **Dataset:** Enron Email Dataset (Balanced mini-subset of phishing and legitimate emails).
 - **Algorithm:** Logistic Regression with `scikit-learn`.
 - **Text Processing:** TF-IDF Vectorizer (max 5000 features, English stop-words removed).
 
-### 📊 Performance Metrics
+###  Performance Metrics
 The model was tested on an independent 20% validation split and achieved exceptional results in threat detection:
 - **Recall: 0.99** *(The model successfully catches 99% of all malicious emails, minimizing false negatives).*
 - High overall accuracy in distinguishing between safe and harmful content.
 
-### 🛠 Tech Stack
+###  Tech Stack
 - `Python 3.x`
 - `scikit-learn`
 - `pandas`
 - `numpy`
 
-### 🚀 Installation & Usage
+###  Installation & Usage
 
 1. **Clone the repository:**
 ```bash
@@ -38,5 +38,5 @@ pip install -r requirements.txt
 python phishing_detector.py
 ```
 
-### 💻 Interactive Testing
+###  Interactive Testing
 Upon running the script, the model trains itself and enters an interactive CLI mode. You can paste any email content directly into the terminal to get a real-time probability score of it being a phishing attempt.
