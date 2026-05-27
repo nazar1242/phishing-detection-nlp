@@ -26,14 +26,17 @@ The model was tested on an independent 20% validation split and achieved excepti
 ```bash
 git clone [https://github.com/nazar1242/phishing-detection-nlp.git](https://github.com/nazar1242/phishing-detection-nlp.git)
 cd phishing-detection-nlp
+```
 
 2. **Install required dependencies:**
 ```bash
 pip install -r requirements.txt
+```
 
 3. **Run the detector:**
 ```bash
 python phishing_detector.py
+```
 
 ### 💻 Interactive Testing
 Upon running the script, the model trains itself and enters an interactive CLI mode. You can paste any email content directly into the terminal to get a real-time probability score of it being a phishing attempt.
