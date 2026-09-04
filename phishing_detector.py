@@ -1,15 +1,13 @@
 import pandas as pd
 import numpy as np
-import os
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 
-file_path = r'C:\Users\nvlas\OneDrive\Desktop\Lr\Vstup\Enron.csv'
-
-if not os.path.exists(file_path):
-    file_path = 'Enron.csv'
+file_path = 'Enron_mini.csv'
+try:
+    df = pd.read_csv(file_path)
 
 try:
     df = pd.read_csv(file_path)
