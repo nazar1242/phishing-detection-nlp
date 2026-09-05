@@ -10,6 +10,10 @@ The model uses **TF-IDF (Term Frequency-Inverse Document Frequency)** for text v
 - **Algorithm:** Logistic Regression with `scikit-learn`.
 - **Text Processing:** TF-IDF Vectorizer (max 5000 features, English stop-words removed).
 
+### Exploratory Data Analysis
+
+Before training, the dataset was analyzed to check class balance and identify the most common linguistic patterns distinguishing phishing from legitimate emails. See [`eda_analysis.ipynb`](./eda_analysis.ipynb) for the full breakdown, including class distribution and top keywords per class.
+
 ### Performance Metrics
 
 The model was evaluated on a held-out 20% test split (400 emails), with the TF-IDF vectorizer fit exclusively on the training data to prevent data leakage.
@@ -35,6 +39,7 @@ The model correctly identifies 99% of phishing emails (181/182) while maintainin
 - `scikit-learn`
 - `pandas`
 - `numpy`
+- `matplotlib`
 
 ### Installation & Usage
 
